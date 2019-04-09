@@ -1,0 +1,5 @@
+
+$can't lookup name defined variable
+FUNC main(){
+	println(x)#
+}

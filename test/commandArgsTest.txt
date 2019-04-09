@@ -1,0 +1,4 @@
+FUNC main(){
+    println(getArgCount())#
+    println(getArg(0))#
+}

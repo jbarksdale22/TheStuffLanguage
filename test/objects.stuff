@@ -1,0 +1,33 @@
+FUNC makePoint(x, y){
+	FUNC printPoints(){
+		println("x = ",x, " y = " , y)#
+	}
+	FUNC addPoints(){
+		VAR z = x + y#
+		z#
+	}
+	this#
+}
+
+FUNC main(){
+	println("Making a point object with x = 3 and y = 4")#
+	VAR point = makePoint(3,4)#
+	VAR printPoints = getObjVal(point,"printPoints")#
+	printPoints()#
+
+	println("accesing x value")#
+	println("returned value is ", getObjVal(point,"x"))#
+
+	println("Setting the x value in the object to 5")#
+	setObjVal(point,"x",5)#
+	printPoints()#
+
+	println("Setting the y value in the object to 67")#
+	setObjVal(point,"y",67)#
+	printPoints()#
+
+	println("Using addPoints function from object")#
+	VAR getAddedPoints = getObjVal(point,"addPoints")#
+	println("the points added together are ",getAddedPoints())#
+}
+

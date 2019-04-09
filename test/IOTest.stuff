@@ -1,0 +1,14 @@
+FUNC main(){
+    println("Adding all numbers from file ", getArg(1))#
+    VAR fp = openFileForReading(getArg(1))#
+    VAR sum = 0#
+    VAR num = readInteger(fp)#
+
+    while( atFileEnd(fp) EQUALS 0){
+        sum = sum + readInteger(fp)#
+    }
+    sum = sum + num#
+    println(sum)#
+    println("Closing ", getArg(1))#
+    closeFile(fp)#
+}

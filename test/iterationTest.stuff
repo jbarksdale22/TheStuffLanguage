@@ -1,0 +1,17 @@
+$a simple function that iterates a variable from 0 to 100
+
+FUNC main(){
+
+    VAR a = 0#
+
+    $prints 0 through 100
+    while(a LTE 100){
+        if(a EQUALS 100){
+            println(a)#
+        }
+        else{
+             print(a, " ")#
+        }
+        a = a + 1#
+    }
+}

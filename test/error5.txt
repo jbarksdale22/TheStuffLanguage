@@ -1,0 +1,6 @@
+
+$ cant subract strings
+FUNC main(){
+	
+	println("Hello " - "World")#
+}

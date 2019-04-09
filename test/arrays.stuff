@@ -1,0 +1,55 @@
+
+$ A program that runs functions on an array
+$ and sets one index from the command line
+
+FUNC main(){
+    println("")#
+    println("Testting arrays")#
+    println("")#
+    $declare the array
+    VAR a = newArray(6)#
+
+    $set the values of the array#
+    println("setting index ", 0, " to ", 1)#
+    setArray(a,0,1)#
+    println("setting index ", 1, " to ", 2)#
+    setArray(a,1,2)#
+    println("setting index ", 2, " to ", 3)#
+    setArray(a,2,3)#
+    println("setting index ", 3, " to ", 4)#
+    setArray(a,3,4)#
+    println("setting index ", 4, " to ", 5)#
+    setArray(a,4,5)#
+    println("setting index ", 5, " to ", 6)#
+    setArray(a,5,6)#
+
+    $print values
+    println("Initial array")#
+    print(getArray(a,0)," ")#
+    print(getArray(a,1)," ")#
+    print(getArray(a,2)," ")#
+    print(getArray(a,3)," ")#
+    print(getArray(a,4)," ")#
+    print(getArray(a,5)," ")#
+    println("")#
+    println("")#
+
+    println("setting index ", 0, " to ", 100)#
+    setArray(a, 0, 100)#
+    println("setting index ", 5, " to ", 0)#
+    setArray(a, 5, 0)#
+    println("setting index ", 3, " to ", 66)#
+    setArray(a, 3, 66)#
+    println("setting index ", 2, " to ", 78)#
+    setArray(a, 2, 78)#
+
+    $print the array again
+    println("New array")#
+    print(getArray(a,0)," ")#
+    print(getArray(a,1)," ")#
+    print(getArray(a,2)," ")#
+    print(getArray(a,3)," ")#
+    print(getArray(a,4)," ")#
+    print(getArray(a,5)," ")#
+    println("")#  
+}

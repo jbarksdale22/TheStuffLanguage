@@ -1,0 +1,4 @@
+$ misssing closing paren
+FUNC main({
+	println("Helloe World")#
+}

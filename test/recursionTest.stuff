@@ -1,0 +1,37 @@
+
+$ the fib function takes a number and returns 
+$ the fibonocci at that index of the sequence
+FUNC fib(x){
+    if(x LTE 1){
+        x#
+    }
+    else{
+        VAR return = fib(x - 1) + fib(x - 2)#
+        return#
+    }
+}
+
+
+FUNC main(){
+    println("Running the fib function on various numbers")#
+    print("fib(0) = ")#
+    println(fib(0))#
+
+    print("fib(1) = ")#
+    println(fib(1))#
+
+    print("fib(2) = ")#
+    println(fib(2))#
+
+    print("fib(9) = ")#
+    println(fib(9))#
+
+    print("fib(12) = ")#
+    println(fib(12))#
+
+    print("fib(13) = ")#
+    println(fib(13))#
+
+    print("fib(6) = ")#
+    println(fib(6))#
+}

@@ -1,0 +1,27 @@
+$ This program shows how to return and pass functions
+
+FUNC adder(x){
+
+    $ the adderer function is returned
+    FUNC adderer(y){
+        VAR return = x + y#
+        return#
+    }
+}
+
+FUNC useF(z){
+
+    println(z(10))#
+}
+
+FUNC main(){
+    println("Setting the first value in the adder function and returning a function")#
+    VAR f = adder(3)#
+
+    println("Now calling the returned function and printing the return value")#
+    println(f(2))#
+
+    println("Passing the function to another function")#
+    useF(f)#
+
+}
